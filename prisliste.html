@@ -48,9 +48,29 @@
             background-color: #0056b3;
         }
         footer {
-            margin-top: 40px; /* Justere avstanden mellom knappen og footer */
-            font-size: 12px; /* Redusere fontstørrelsen på organisasjonsnummeret */
+            margin-top: 40px;
+            font-size: 12px;
             color: #666;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .bestselger {
+            background-color: #fff8dc;
+            font-weight: bold;
+            color: #d2691e;
         }
     </style>
 </head>
@@ -75,7 +95,7 @@
 
     <div class="service">
         <h3>🧠 Redigering & Filming – "Den Gyldne Kombinasjonen"</h3>
-        <p>Vi filmer og redigerer din video, klar til publisering.</p>
+        <p>Jeg filmer og redigerer din video, klar til publisering.</p>
         <p><strong>Pris:</strong> Opptil 3 min: fra 15 000 kr</p>
         <p>Ta kontakt</p>
     </div>
@@ -88,7 +108,7 @@
 
     <div class="service">
         <h3>📸 Droneopptak – "Himmelsk Perspektiv"</h3>
-        <p>Vi filmer fra luften for det lille ekstra.</p>
+        <p>Jeg filmer fra luften for det lille ekstra.</p>
         <p><strong>Pris:</strong> fra 4 000 kr (inntil 10 min råmateriale)</p>
     </div>
 
@@ -96,7 +116,38 @@
         <h3>💪 All Inclusive – "Large Pakka"</h3>
         <p>Filming, redigering, musikk og droneopptak.</p>
         <p><strong>Pris:</strong> Ta kontakt </p>
-    
+    </div>
+
+    <!-- Utleiepriser -->
+    <div class="service">
+        <h3>🎬 Utleie av Film- og Fotoutstyr</h3>
+        <p>Komplett kit eller enkeltdeler tilgjengelig. Alle priser inkl. mva.</p>
+        
+        <h4>📦 Enkeltdeler (per dag)</h4>
+        <table>
+            <tr><th>Utstyr</th><th>Dagpris</th><th>Ukepris</th></tr>
+            <tr><td>Sony A6600 kamerahus</td><td>500–600 kr</td><td>2 000 kr</td></tr>
+            <tr><td>Sony Zeiss 16–70mm f/4</td><td>250 kr</td><td>900 kr</td></tr>
+            <tr><td>Sigma 30mm f/1.4</td><td>200 kr</td><td>700 kr</td></tr>
+            <tr><td>Samyang 12mm f/2</td><td>200 kr</td><td>700 kr</td></tr>
+            <tr><td>DJI Ronin SC gimbal</td><td>300 kr</td><td>1 000 kr</td></tr>
+            <tr><td>Røde VideoMic Pro</td><td>150 kr</td><td>500 kr</td></tr>
+            <tr><td>SmallRig cage + handle</td><td>100 kr</td><td>300 kr</td></tr>
+            <tr><td>Joby GorillaPod</td><td>100 kr</td><td>300 kr</td></tr>
+            <tr><td>ND-filter sett</td><td>100 kr</td><td>300 kr</td></tr>
+            <tr><td>Ekstra batterier + lader</td><td>100 kr</td><td>300 kr</td></tr>
+        </table>
+
+        <h4>🎥 Pakker (per dag)</h4>
+        <table>
+            <tr><th>Pakkeløsning</th><th>Innhold</th><th>Dagpris</th><th>Ukepris</th></tr>
+            <tr><td>Kamera + ett objektiv</td><td>A6600 + valgfritt objektiv</td><td>700 kr</td><td>2 500 kr</td></tr>
+            <tr><td>Kamera + 3 objektiver</td><td>A6600 + 16–70 + 30mm f/1.4 + 12mm f/2</td><td>1 000 kr</td><td>3 500 kr</td></tr>
+            <tr><td>Film-pakke basis</td><td>Kamera + 3 objektiver + mic</td><td>1 200 kr</td><td>4 000 kr</td></tr>
+            <tr class="bestselger"><td>⭐ Film-pakke pro (BESTSELGER)</td><td>Alt utstyr (kamera, 3 linser, mic, gimbal, ND, cage)</td><td>1 500 kr</td><td>5 500 kr</td></tr>
+        </table>
+
+        <p><strong>Depositum:</strong> 5 000 kr kreves ved alle utleieavtaler.</p>
     </div>
 
     <div class="contact">
@@ -104,15 +155,11 @@
         <p>📧 <a href="mailto:bersageleditconsult@gmail.com">bersageleditconsult@gmail.com</a></p>
     </div>
 
-    <!-- Tilbake til forrige side knapp -->
     <a href="javascript:history.back()" class="btn-back">Tilbake til forrige side</a>
 
    <footer>
         BEC - Organisasjonsnummer: 934444132<br>
-        
     </footer>
 </div>
 </body>
 </html>
-
-
