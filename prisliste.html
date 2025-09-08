@@ -8,74 +8,75 @@
     body {
       margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background: url('ColorGrading1.jpg') no-repeat center/cover;
       color: white;
-      position: relative;
+      background: url('Logo_vann3_fjellbakgrunn.PNG') no-repeat center center fixed;
+      background-size: cover;
     }
-    header::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.6);
+    .overlay {
+      background: rgba(0,0,0,0.7);
+      min-height: 100vh;
+      padding: 20px;
     }
-    header .content {
-      position: relative;
-      z-index: 1;
-    }
-    header img {
-      max-width: 200px;
+    .logo {
+      text-align: center;
       margin-bottom: 20px;
     }
-    header h1 {
-      margin: 10px 0 0;
+    .logo img {
+      max-width: 250px;
+      height: auto;
+    }
+    h1, h2, h3 {
+      text-align: center;
+      margin-bottom: 10px;
     }
     .container {
       max-width: 1000px;
-      margin: 40px auto;
+      margin: 0 auto;
       padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     .service {
-      margin-bottom: 30px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 20px;
+      margin-bottom: 40px;
+      padding: 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+    }
+    .service img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      display: block;
     }
     .service h3 {
-      color: #007BFF;
+      color: #FFD700;
+      margin-top: 0;
     }
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
+      color: white;
     }
     th, td {
       border: 1px solid #ddd;
       padding: 8px;
       text-align: center;
+      background: rgba(0,0,0,0.5);
     }
     th {
-      background: #f2f2f2;
+      background: rgba(255,255,255,0.2);
     }
     .bestselger {
-      background: #fff8dc;
+      background: rgba(255,215,0,0.3);
       font-weight: bold;
-      color: #d2691e;
+      color: #FFD700;
     }
     .contact {
-      margin-top: 30px;
       text-align: center;
       font-size: 1.1rem;
+      margin-top: 30px;
     }
     .contact a {
-      color: #007BFF;
+      color: #FFD700;
       text-decoration: none;
     }
     .btn-back {
@@ -92,101 +93,90 @@
     }
     footer {
       text-align: center;
-      color: #666;
       font-size: 0.9rem;
+      color: #ccc;
       margin-top: 40px;
-      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="content">
-      <img src="Hvit_logo_sort_bakgrunn.PNG" alt="BEC Logo">
-      <h1>Veiledende Prisliste 2025</h1>
-      <p>Ta kontakt – vi finner alltid en løsning</p>
+  <div class="overlay">
+    <div class="logo">
+      <img src="Hvit_logo_transparent.png" alt="BEC Logo">
     </div>
-  </header>
+    <h1>Veiledende Prisliste 2025</h1>
+    <p style="text-align:center;">Ta kontakt – vi finner alltid en løsning</p>
 
-  <div class="container">
-    <div class="service">
-      <h3>🎯 Redigering Only – "Klipp & Lim"</h3>
-      <p>Kun redigering av råmateriale du selv leverer.</p>
-      <p><strong>Pris:</strong> 6 000 kr (opptil 3 min ferdig film)</p>
-      <p>1 000 kr per ekstra påbegynt minutt</p>
-    </div>
+    <div class="container">
 
-    <div class="service">
-      <h3>🎥 Filming Only – "Blinkskuddet"</h3>
-      <p>Jeg filmer på lokasjon (inntil 4 timer) – du redigerer selv.</p>
-      <p><strong>Pris:</strong> fra 8 000 kr</p>
-    </div>
+      <div class="service">
+        <img src="Kamera_mer_mikk_mount_B&W.JPG" alt="Filming med mikrofon">
+        <h3>🎯 Redigering Only – "Klipp & Lim"</h3>
+        <p>Kun redigering av råmateriale du selv leverer.</p>
+        <p><strong>Pris:</strong> 6 000 kr (opptil 3 min ferdig film)</p>
+        <p>1 000 kr per ekstra påbegynt minutt</p>
+      </div>
 
-    <div class="service">
-      <h3>🧠 Redigering & Filming – "Den Gyldne Kombinasjonen"</h3>
-      <p>Jeg filmer og redigerer din video, klar til publisering.</p>
-      <p><strong>Pris:</strong> Opptil 3 min: fra 15 000 kr</p>
-    </div>
+      <div class="service">
+        <img src="Kamera_i_natur.JPG" alt="Filming i naturen">
+        <h3>🎥 Filming Only – "Blinkskuddet"</h3>
+        <p>Jeg filmer på lokasjon (inntil 4 timer) – du redigerer selv.</p>
+        <p><strong>Pris:</strong> fra 8 000 kr</p>
+      </div>
 
-    <div class="service">
-      <h3>🎶 Musikkproduksjon – "Sound of Success"</h3>
-      <p>Original instrumental musikk produsert til din video.</p>
-      <p><strong>Pris:</strong> fra 5 000 kr</p>
-    </div>
+      <div class="service">
+        <img src="ColorGrading1.jpg" alt="Color grading prosess">
+        <h3>🧠 Redigering & Filming – "Den Gyldne Kombinasjonen"</h3>
+        <p>Jeg filmer og redigerer din video, klar til publisering.</p>
+        <p><strong>Pris:</strong> Opptil 3 min: fra 15 000 kr</p>
+      </div>
 
-    <div class="service">
-      <h3>📸 Droneopptak – "Himmelsk Perspektiv"</h3>
-      <p>Jeg filmer fra luften for det lille ekstra.</p>
-      <p><strong>Pris:</strong> fra 4 000 kr (inntil 10 min råmateriale)</p>
-    </div>
+      <div class="service">
+        <img src="Samyang objektiv.jpg" alt="Samyang objektiv">
+        <h3>🎶 Musikkproduksjon – "Sound of Success"</h3>
+        <p>Original instrumental musikk produsert til din video.</p>
+        <p><strong>Pris:</strong> fra 5 000 kr</p>
+      </div>
 
-    <div class="service">
-      <h3>💪 All Inclusive – "Large Pakka"</h3>
-      <p>Filming, redigering, musikk og droneopptak.</p>
-      <p><strong>Pris:</strong> Ta kontakt</p>
-    </div>
+      <!-- Utleiepriser -->
+      <div class="service">
+        <h3>🎬 Utleie av Film- og Fotoutstyr</h3>
+        <p>Komplett kit eller enkeltdeler tilgjengelig. Alle priser inkl. mva.</p>
+        
+        <h4>📦 Enkeltdeler (per dag)</h4>
+        <table>
+          <tr><th>Utstyr</th><th>Dagpris</th><th>Ukepris</th></tr>
+          <tr><td>Sony A6600 kamerahus</td><td>600 kr</td><td>2 000 kr</td></tr>
+          <tr><td>Sony Zeiss 16–70mm f/4</td><td>250 kr</td><td>900 kr</td></tr>
+          <tr><td>Sigma 30mm f/1.4</td><td>200 kr</td><td>700 kr</td></tr>
+          <tr><td>Samyang 12mm f/2</td><td>200 kr</td><td>700 kr</td></tr>
+          <tr><td>DJI Ronin SC gimbal</td><td>300 kr</td><td>1 000 kr</td></tr>
+          <tr><td>Røde VideoMic Pro</td><td>150 kr</td><td>500 kr</td></tr>
+        </table>
 
-    <div class="service">
-      <h3>🎬 Utleie av Film- og Fotoutstyr</h3>
-      <p>Komplett kit eller enkeltdeler tilgjengelig. Alle priser inkl. mva.</p>
-      <h4>📦 Enkeltdeler (per dag)</h4>
-      <table>
-        <tr><th>Utstyr</th><th>Dagpris</th><th>Ukepris</th></tr>
-        <tr><td>Sony A6600 kamerahus</td><td>600 kr</td><td>2 000 kr</td></tr>
-        <tr><td>Sony Zeiss 16–70mm f/4</td><td>250 kr</td><td>900 kr</td></tr>
-        <tr><td>Sigma 30mm f/1.4</td><td>200 kr</td><td>700 kr</td></tr>
-        <tr><td>Samyang 12mm f/2</td><td>200 kr</td><td>700 kr</td></tr>
-        <tr><td>DJI Ronin SC gimbal</td><td>300 kr</td><td>1 000 kr</td></tr>
-        <tr><td>Røde VideoMic Pro</td><td>150 kr</td><td>500 kr</td></tr>
-        <tr><td>SmallRig cage + handle</td><td>100 kr</td><td>300 kr</td></tr>
-        <tr><td>Joby GorillaPod</td><td>100 kr</td><td>300 kr</td></tr>
-        <tr><td>ND-filter sett</td><td>100 kr</td><td>300 kr</td></tr>
-        <tr><td>Ekstra batterier + lader</td><td>100 kr</td><td>300 kr</td></tr>
-      </table>
-      <h4>🎥 Pakker (per dag)</h4>
-      <table>
-        <tr><th>Pakkeløsning</th><th>Innhold</th><th>Dagpris</th><th>Ukepris</th></tr>
-        <tr><td>Kamera + ett objektiv</td><td>A6600 + valgfritt objektiv</td><td>700 kr</td><td>2 500 kr</td></tr>
-        <tr><td>Kamera + 3 objektiver</td><td>A6600 + 16–70 + 30mm f/1.4 + 12mm f/2</td><td>1 000 kr</td><td>3 500 kr</td></tr>
-        <tr><td>Film-pakke basis</td><td>Kamera + 3 objektiver + mic</td><td>1 200 kr</td><td>4 000 kr</td></tr>
-        <tr class="bestselger"><td>⭐ Film-pakke pro (BESTSELGER)</td><td>Alt utstyr (kamera, 3 linser, mic, gimbal, ND, cage)</td><td>1 500 kr</td><td>5 500 kr</td></tr>
-      </table>
-      <p><strong>Depositum:</strong> 5 000 kr kreves ved alle utleieavtaler.</p>
-    </div>
+        <h4>🎥 Pakker (per dag)</h4>
+        <table>
+          <tr><th>Pakkeløsning</th><th>Innhold</th><th>Dagpris</th><th>Ukepris</th></tr>
+          <tr><td>Kamera + ett objektiv</td><td>A6600 + valgfritt objektiv</td><td>700 kr</td><td>2 500 kr</td></tr>
+          <tr class="bestselger"><td>⭐ Film-pakke pro (BESTSELGER)</td><td>Alt utstyr (kamera, 3 linser, mic, gimbal, ND, cage)</td><td>1 500 kr</td><td>5 500 kr</td></tr>
+        </table>
+        <p><strong>Depositum:</strong> 5 000 kr kreves ved alle utleieavtaler.</p>
+      </div>
 
-    <div class="contact">
-      📞 95 47 24 83 <br>
-      📧 <a href="mailto:bersageleditconsult@gmail.com">bersageleditconsult@gmail.com</a> <br><br>
-      👉 <a href="https://www.instagram.com/DITT_INSTAGRAM/" target="_blank">Følg oss på Instagram</a>
+      <div class="contact">
+        📞 95 47 24 83 <br>
+        📧 <a href="mailto:bersageleditconsult@gmail.com">bersageleditconsult@gmail.com</a> <br><br>
+        👉 <a href="https://www.instagram.com/bersagel_edit_consult?igsh=anBremQ0MmhxMjg4&utm_source=qr" target="_blank">Instagram</a>
+      </div>
+
+      <div style="text-align:center;">
+        <a href="index.html" class="btn-back">Tilbake til forsiden</a>
+      </div>
     </div>
 
-    <div style="text-align:center;">
-      <a href="index.html" class="btn-back">Tilbake til forsiden</a>
-    </div>
+    <footer>
+      BEC - Organisasjonsnummer: 934444132
+    </footer>
   </div>
-
-  <footer>
-    BEC - Organisasjonsnummer: 934444132
-  </footer>
 </body>
 </html>
