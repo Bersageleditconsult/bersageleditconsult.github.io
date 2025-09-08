@@ -1,178 +1,192 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veil. Prisliste</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        .logo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .logo img {
-            max-width: 200px; /* juster størrelsen på logoen her */
-            height: auto;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        .service {
-            margin: 20px 0;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        .contact {
-            margin-top: 30px;
-            font-weight: bold;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .btn-back {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .btn-back:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 12px;
-            color: #666;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .bestselger {
-            background-color: #fff8dc;
-            font-weight: bold;
-            color: #d2691e;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisliste - Bersagel Edit Consult</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: url('ColorGrading1.jpg') no-repeat center/cover;
+      color: white;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    header .content {
+      position: relative;
+      z-index: 1;
+    }
+    header img {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 10px 0 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .service {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
+    }
+    .service h3 {
+      color: #007BFF;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background: #f2f2f2;
+    }
+    .bestselger {
+      background: #fff8dc;
+      font-weight: bold;
+      color: #d2691e;
+    }
+    .contact {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .contact a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .btn-back {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 12px 24px;
+      background: #007BFF;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .btn-back:hover {
+      background: #0056b3;
+    }
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-    <!-- Logo plassert øverst -->
-    <div class="logo">
-        <img src="Logo%20black%20on%20white.png" alt="Bersagel Edit Consult Logo">
+  <header>
+    <div class="content">
+      <img src="Hvit_logo_sort_bakgrunn.PNG" alt="BEC Logo">
+      <h1>Veiledende Prisliste 2025</h1>
+      <p>Ta kontakt – vi finner alltid en løsning</p>
     </div>
+  </header>
 
-    <h1>Bersagel Edit Consult</h1>
-    <h2>Veiledende Prisliste 2025</h2>
-    <p>Ta kontakt - vi finner alltid en løsning</p>
-
+  <div class="container">
     <div class="service">
-        <h3>🎯 Redigering Only – "Klipp & Lim"</h3>
-        <p>Kun redigering av råmateriale du selv leverer.</p>
-        <p><strong>Pris:</strong> 6 000 kr (opptil 3 min ferdig film)</p>
-        <p>1 000 kr per ekstra påbegynt minutt</p>
-    </div>
-
-    <div class="service">
-        <h3>🎥 Filming Only – "Blinkskuddet"</h3>
-        <p>Jeg filmer på lokasjon (inntil 4 timer) – du redigerer selv.</p>
-        <p><strong>Pris:</strong> fra 8 000 kr</p>
+      <h3>🎯 Redigering Only – "Klipp & Lim"</h3>
+      <p>Kun redigering av råmateriale du selv leverer.</p>
+      <p><strong>Pris:</strong> 6 000 kr (opptil 3 min ferdig film)</p>
+      <p>1 000 kr per ekstra påbegynt minutt</p>
     </div>
 
     <div class="service">
-        <h3>🧠 Redigering & Filming – "Den Gyldne Kombinasjonen"</h3>
-        <p>Jeg filmer og redigerer din video, klar til publisering.</p>
-        <p><strong>Pris:</strong> Opptil 3 min: fra 15 000 kr</p>
-        <p>Ta kontakt</p>
+      <h3>🎥 Filming Only – "Blinkskuddet"</h3>
+      <p>Jeg filmer på lokasjon (inntil 4 timer) – du redigerer selv.</p>
+      <p><strong>Pris:</strong> fra 8 000 kr</p>
     </div>
 
     <div class="service">
-        <h3>🎶 Musikkproduksjon – "Sound of Success"</h3>
-        <p>Original instrumental musikk produsert til din video.</p>
-        <p><strong>Pris:</strong> fra 5 000 kr</p>
+      <h3>🧠 Redigering & Filming – "Den Gyldne Kombinasjonen"</h3>
+      <p>Jeg filmer og redigerer din video, klar til publisering.</p>
+      <p><strong>Pris:</strong> Opptil 3 min: fra 15 000 kr</p>
     </div>
 
     <div class="service">
-        <h3>📸 Droneopptak – "Himmelsk Perspektiv"</h3>
-        <p>Jeg filmer fra luften for det lille ekstra.</p>
-        <p><strong>Pris:</strong> fra 4 000 kr (inntil 10 min råmateriale)</p>
+      <h3>🎶 Musikkproduksjon – "Sound of Success"</h3>
+      <p>Original instrumental musikk produsert til din video.</p>
+      <p><strong>Pris:</strong> fra 5 000 kr</p>
     </div>
 
     <div class="service">
-        <h3>💪 All Inclusive – "Large Pakka"</h3>
-        <p>Filming, redigering, musikk og droneopptak.</p>
-        <p><strong>Pris:</strong> Ta kontakt </p>
+      <h3>📸 Droneopptak – "Himmelsk Perspektiv"</h3>
+      <p>Jeg filmer fra luften for det lille ekstra.</p>
+      <p><strong>Pris:</strong> fra 4 000 kr (inntil 10 min råmateriale)</p>
     </div>
 
-    <!-- Utleiepriser -->
     <div class="service">
-        <h3>🎬 Utleie av Film- og Fotoutstyr</h3>
-        <p>Komplett kit eller enkeltdeler tilgjengelig. Alle priser inkl. mva.</p>
-        
-        <h4>📦 Enkeltdeler (per dag)</h4>
-        <table>
-            <tr><th>Utstyr</th><th>Dagpris</th><th>Ukepris</th></tr>
-            <tr><td>Sony A6600 kamerahus</td><td>500–600 kr</td><td>2 000 kr</td></tr>
-            <tr><td>Sony Zeiss 16–70mm f/4</td><td>250 kr</td><td>900 kr</td></tr>
-            <tr><td>Sigma 30mm f/1.4</td><td>200 kr</td><td>700 kr</td></tr>
-            <tr><td>Samyang 12mm f/2</td><td>200 kr</td><td>700 kr</td></tr>
-            <tr><td>DJI Ronin SC gimbal</td><td>300 kr</td><td>1 000 kr</td></tr>
-            <tr><td>Røde VideoMic Pro</td><td>150 kr</td><td>500 kr</td></tr>
-            <tr><td>SmallRig cage + handle</td><td>100 kr</td><td>300 kr</td></tr>
-            <tr><td>Joby GorillaPod</td><td>100 kr</td><td>300 kr</td></tr>
-            <tr><td>ND-filter sett</td><td>100 kr</td><td>300 kr</td></tr>
-            <tr><td>Ekstra batterier + lader</td><td>100 kr</td><td>300 kr</td></tr>
-        </table>
+      <h3>💪 All Inclusive – "Large Pakka"</h3>
+      <p>Filming, redigering, musikk og droneopptak.</p>
+      <p><strong>Pris:</strong> Ta kontakt</p>
+    </div>
 
-        <h4>🎥 Pakker (per dag)</h4>
-        <table>
-            <tr><th>Pakkeløsning</th><th>Innhold</th><th>Dagpris</th><th>Ukepris</th></tr>
-            <tr><td>Kamera + ett objektiv</td><td>A6600 + valgfritt objektiv</td><td>700 kr</td><td>2 500 kr</td></tr>
-            <tr><td>Kamera + 3 objektiver</td><td>A6600 + 16–70 + 30mm f/1.4 + 12mm f/2</td><td>1 000 kr</td><td>3 500 kr</td></tr>
-            <tr><td>Film-pakke basis</td><td>Kamera + 3 objektiver + mic</td><td>1 200 kr</td><td>4 000 kr</td></tr>
-            <tr class="bestselger"><td>⭐ Film-pakke pro (BESTSELGER)</td><td>Alt utstyr (kamera, 3 linser, mic, gimbal, ND, cage)</td><td>1 500 kr</td><td>5 500 kr</td></tr>
-        </table>
-
-        <p><strong>Depositum:</strong> 5 000 kr kreves ved alle utleieavtaler.</p>
+    <div class="service">
+      <h3>🎬 Utleie av Film- og Fotoutstyr</h3>
+      <p>Komplett kit eller enkeltdeler tilgjengelig. Alle priser inkl. mva.</p>
+      <h4>📦 Enkeltdeler (per dag)</h4>
+      <table>
+        <tr><th>Utstyr</th><th>Dagpris</th><th>Ukepris</th></tr>
+        <tr><td>Sony A6600 kamerahus</td><td>600 kr</td><td>2 000 kr</td></tr>
+        <tr><td>Sony Zeiss 16–70mm f/4</td><td>250 kr</td><td>900 kr</td></tr>
+        <tr><td>Sigma 30mm f/1.4</td><td>200 kr</td><td>700 kr</td></tr>
+        <tr><td>Samyang 12mm f/2</td><td>200 kr</td><td>700 kr</td></tr>
+        <tr><td>DJI Ronin SC gimbal</td><td>300 kr</td><td>1 000 kr</td></tr>
+        <tr><td>Røde VideoMic Pro</td><td>150 kr</td><td>500 kr</td></tr>
+        <tr><td>SmallRig cage + handle</td><td>100 kr</td><td>300 kr</td></tr>
+        <tr><td>Joby GorillaPod</td><td>100 kr</td><td>300 kr</td></tr>
+        <tr><td>ND-filter sett</td><td>100 kr</td><td>300 kr</td></tr>
+        <tr><td>Ekstra batterier + lader</td><td>100 kr</td><td>300 kr</td></tr>
+      </table>
+      <h4>🎥 Pakker (per dag)</h4>
+      <table>
+        <tr><th>Pakkeløsning</th><th>Innhold</th><th>Dagpris</th><th>Ukepris</th></tr>
+        <tr><td>Kamera + ett objektiv</td><td>A6600 + valgfritt objektiv</td><td>700 kr</td><td>2 500 kr</td></tr>
+        <tr><td>Kamera + 3 objektiver</td><td>A6600 + 16–70 + 30mm f/1.4 + 12mm f/2</td><td>1 000 kr</td><td>3 500 kr</td></tr>
+        <tr><td>Film-pakke basis</td><td>Kamera + 3 objektiver + mic</td><td>1 200 kr</td><td>4 000 kr</td></tr>
+        <tr class="bestselger"><td>⭐ Film-pakke pro (BESTSELGER)</td><td>Alt utstyr (kamera, 3 linser, mic, gimbal, ND, cage)</td><td>1 500 kr</td><td>5 500 kr</td></tr>
+      </table>
+      <p><strong>Depositum:</strong> 5 000 kr kreves ved alle utleieavtaler.</p>
     </div>
 
     <div class="contact">
-        <p>📞 95 47 24 83</p>
-        <p>📧 <a href="mailto:bersageleditconsult@gmail.com">bersageleditconsult@gmail.com</a></p>
+      📞 95 47 24 83 <br>
+      📧 <a href="mailto:bersageleditconsult@gmail.com">bersageleditconsult@gmail.com</a> <br><br>
+      👉 <a href="https://www.instagram.com/DITT_INSTAGRAM/" target="_blank">Følg oss på Instagram</a>
     </div>
 
-    <a href="javascript:history.back()" class="btn-back">Tilbake til forrige side</a>
+    <div style="text-align:center;">
+      <a href="index.html" class="btn-back">Tilbake til forsiden</a>
+    </div>
+  </div>
 
-   <footer>
-        BEC - Organisasjonsnummer: 934444132<br>
-    </footer>
-</div>
+  <footer>
+    BEC - Organisasjonsnummer: 934444132
+  </footer>
 </body>
 </html>
