@@ -8,147 +8,72 @@
     body {
       margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
-      color: #333;
-      background-color: #f9f9f9;
+      color: white;
+      text-align: center;
+      background: url('Logo_vann3_fjellbakgrunn.PNG') no-repeat center center fixed;
+      background-size: cover;
     }
-    header {
-      position: relative;
-      background: url('Kamera_i_natur.JPG') no-repeat center center/cover;
-      height: 70vh;
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      color: white;
+      padding: 20px;
     }
-    header::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.5);
-    }
-    header .content {
-      position: relative;
-      z-index: 1;
-    }
-    header img {
-      max-width: 220px;
+    .logo img {
+      max-width: 300px;
+      height: auto;
       margin-bottom: 20px;
     }
-    header h1 {
+    h1 {
       font-size: 2.5rem;
-      margin: 0;
+      margin-bottom: 10px;
     }
-    header h2 {
-      font-size: 1.3rem;
-      font-weight: 300;
-      margin-top: 10px;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    .intro {
-      font-size: 1.1rem;
+    p {
+      font-size: 1.2rem;
       line-height: 1.6;
-      margin-bottom: 40px;
+      max-width: 800px;
+      margin: 0 auto 20px;
     }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .service {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .service img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-    .service h3 {
-      margin-top: 0;
-      color: #007BFF;
-    }
-    .contact {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 1.1rem;
-    }
-    .contact a {
-      color: #007BFF;
-      text-decoration: none;
-    }
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    .btn {
+    .links a {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px;
       padding: 12px 24px;
       background: #007BFF;
       color: white;
       border-radius: 5px;
       text-decoration: none;
+      font-weight: bold;
     }
-    .btn:hover {
+    .links a:hover {
       background: #0056b3;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="content">
-      <img src="Hvit_Logo_kamera_bakgrunn.PNG" alt="Bersagel Edit Consult Logo">
-      <h1>Bersagel Edit Consult</h1>
-      <h2>Musikk- og videoproduksjon med personlig tilpasning</h2>
-      <a href="prisliste.html" class="btn">Se vår prisliste</a>
+  <div class="overlay">
+    <div class="logo">
+      <img src="Hvit_logo_transparent.png" alt="Bersagel Edit Consult Logo">
     </div>
-  </header>
-
-  <div class="container">
-    <div class="intro">
-      Bersagel Edit Consult tilbyr kreative produksjoner som gjør profesjonell film og musikk mer tilgjengelig – enten det gjelder undervisning, bedriftspresentasjoner eller personlige begivenheter. 
-      Jeg skaper løsninger som kombinerer kvalitet med etisk prising, slik at både små og store aktører kan formidle sine historier.
+    <h1>Bersagel Edit Consult</h1>
+    <p>
+      Musikk- og videoproduksjon med personlig tilpasning.<br>
+      Jeg kombinerer profesjonell kvalitet med kreative løsninger – for både små og store prosjekter.
+    </p>
+    <div class="links">
+      <a href="prisliste.html">Se prisliste</a>
+      <a href="https://www.instagram.com/bersagel_edit_consult?igsh=anBremQ0MmhxMjg4&utm_source=qr" target="_blank">Instagram</a>
     </div>
-
-    <div class="services">
-      <div class="service">
-        <img src="ColorGrading1.jpg" alt="Videoredigering">
-        <h3>🎯 Redigering Only</h3>
-        <p>Kun redigering av råmateriale du selv leverer.</p>
-      </div>
-      <div class="service">
-        <img src="Kamera_mer_mikk_mount_B&W.JPG" alt="Filming">
-        <h3>🎥 Filming Only</h3>
-        <p>Profesjonell filming på lokasjon, med skarpt resultat.</p>
-      </div>
-      <div class="service">
-        <img src="Samyang objektiv.jpg" alt="Musikkproduksjon">
-        <h3>🎶 Musikkproduksjon</h3>
-        <p>Original musikk skreddersydd til ditt prosjekt.</p>
-      </div>
-    </div>
-
-    <div class="contact">
-      📞 95 47 24 83 <br>
-      📧 <a href="mailto:bersageleditconsult@gmail.com">bersageleditconsult@gmail.com</a> <br><br>
-      👉 <a href="https://www.instagram.com/DITT_INSTAGRAM/" target="_blank">Følg oss på Instagram</a>
-    </div>
+    <footer>
+      BEC - Organisasjonsnummer: 934444132
+    </footer>
   </div>
-
-  <footer>
-    BEC - Organisasjonsnummer: 934444132
-  </footer>
 </body>
 </html>
