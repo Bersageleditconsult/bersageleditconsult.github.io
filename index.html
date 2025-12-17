@@ -39,6 +39,36 @@
       line-height: 1.6;
       margin-bottom: 40px;
     }
+
+    /* DEMO-SEKSJON */
+    .demo-section {
+      width: 100%;
+      max-width: 900px;
+      margin: 40px 0;
+    }
+    .demo-section h2 {
+      margin-bottom: 10px;
+      color: #FFD700;
+    }
+    .demo-section p {
+      margin-bottom: 25px;
+      color: #ddd;
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin-bottom: 30px;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+    }
+
     .btn {
       display: inline-block;
       margin: 10px;
@@ -72,14 +102,40 @@
     <div class="logo">
       <img src="Hvit_logo_transparent bakgrunn.png" alt="BEC Logo">
     </div>
+
     <h1>Bersagel Edit Consult</h1>
+
     <p class="hero-text">
-      Bersagel Edit Consult tilbyr kreative produksjoner som gjør profesjonell film og musikk mer tilgjengelig – enten det gjelder undervisning, bedriftspresentasjoner eller personlige begivenheter. Jeg skaper løsninger som kombinerer kvalitet med etisk prising, slik at både små og store aktører kan formidle sine historier. Fra skoleprosjekter og opplæringsfilmer til bedriftsvideoer, eventer og personlige minner – målet er å levere produksjoner som engasjerer, bygger fellesskap og varer over tid.
+      Bersagel Edit Consult tilbyr kreative produksjoner som gjør profesjonell film og musikk mer tilgjengelig – enten det gjelder undervisning, bedriftspresentasjoner eller personlige begivenheter. Jeg skaper løsninger som kombinerer kvalitet med etisk prising, slik at både små og store aktører kan formidle sine historier.
     </p>
 
+    <!-- DEMOER -->
+    <div class="demo-section">
+      <h2>Editing demo</h2>
+      <p>Korte demoer som viser stil, tempo og visuell historiefortelling.</p>
+
+      <!-- Rolig demo -->
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/6bK3tU182lQ"
+          title="Rolig editing demo"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Sports / treningsdemo -->
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/bAn16a7E_RE"
+          title="Rask trenings editing demo"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
     <div>
-      <a href="prisliste.html" class="btn">Se Prisliste</a>
-      <a href="https://www.instagram.com/bersagel_edit_consult?igsh=anBremQ0MmhxMjg4&utm_source=qr" target="_blank" class="btn">Instagram</a>
+      <a href="prisliste.html" class="btn">Se prisliste</a>
+      <a href="https://www.instagram.com/bersagel_edit_consult" target="_blank" class="btn">Instagram</a>
     </div>
 
     <div class="contact">
@@ -88,10 +144,8 @@
     </div>
 
     <footer>
-      BEC - Organisasjonsnummer: 934444132
+      BEC – Organisasjonsnummer: 934444132
     </footer>
   </div>
 </body>
 </html>
-
-
